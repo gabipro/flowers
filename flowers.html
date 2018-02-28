@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Esencje kwiatowe</title>
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">  
+		  
+    <style>
+      #element_z_tlem {
+        border:3px solid #b9b7b7;
+        animation:ruch 200s linear infinite alternate;
+        -webkit-animation:ruch 200s linear infinite alternate; /* dla Google Chrome, Safari, Opera 15+ */
+        background-image:url('flowers1.png'),
+                         url('flowers2.png'),
+                         url('flowers3.png');
+      }
+
+      #tytul {
+        width:500px;
+        margin:84px auto;
+        padding:10px;
+        border:3px solid #b9b7b7;
+		border-radius: 35px;  
+        background-color:rgba(255,255,255,0.7);
+        font-size:75px;
+		text-align: center;
+		font-family: 'Italianno', cursive;
+      }
+
+      /*------------------------ANIMACJA-----------------------*/
+      @keyframes ruch
+      {
+        0% {background-position:0 0, 0 0, 0 0;}
+        100% {background-position:10000px 0, 7500px 0, 5000px 0;}
+      }
+
+      /* dla Google Chrome, Safari, Opera 15+ */
+      @-webkit-keyframes ruch
+      {
+        0% {background-position:0 0, 0 0, 0 0;}
+        100% {background-position:10000px 0, 7500px 0, 5000px 0;}
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="element_z_tlem">
+      <h1 id="tytul">
+		  
+         Finezja - drogeria internetowa  
+      <h1>
+      
+    </div>
+
+  </body>
+</html>
